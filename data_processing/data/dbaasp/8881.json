@@ -1,0 +1,60 @@
+{
+  "peptideCard" : {
+    "id" : 8881,
+    "name" : "Tritrpticin [W 6 5-OH-W]",
+    "seq" : "VRRFPXWWPFLRR",
+    "seqLength" : 13,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "unusualAminoAcids" : [ {
+      "position" : 6,
+      "modificationType" : "5-OH-TRP"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli ATCC 25922",
+      "activityMeasure" : "MIC",
+      "concentration" : "4-8",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "cfu" : "5E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli ATCC 25922",
+      "activityMeasure" : "MBC",
+      "concentration" : "4-8",
+      "unit" : "µM",
+      "medium" : "MHA",
+      "cfu" : "5E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis 168",
+      "activityMeasure" : "MIC",
+      "concentration" : "2",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "cfu" : "5E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis 168",
+      "activityMeasure" : "MBC",
+      "concentration" : "2",
+      "unit" : "µM",
+      "medium" : "MHA",
+      "cfu" : "5E5",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Biochim Biophys Acta",
+      "articleYear" : 2015,
+      "volume" : "1848",
+      "pages" : "277-288",
+      "title" : "Hydroxy-tryptophan containing derivatives of tritrpticin: modification of antimicrobial activity and membrane interactions.",
+      "pubMed" : "25178967",
+      "authors" : [ "Arias M", "Jensen KV", "Nguyen LT", "Storey DG", "Vogel HJ" ]
+    } ]
+  }
+}

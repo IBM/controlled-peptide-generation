@@ -1,0 +1,71 @@
+{
+  "peptideCard" : {
+    "id" : 2999,
+    "name" : "MEP-9 / melectin analogue",
+    "seq" : "GFLSILKKVLP",
+    "seqLength" : 11,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.80",
+      "normalizedHydrophobicity" : "-1.12",
+      "netCharge" : " 3.00",
+      "isoelectricPoint" : "14.00"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Bacillus subtilis 168",
+      "activityMeasure" : "MIC",
+      "concentration" : "13.0",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1.2E3-7.5E3",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1.2E3-7.5E3",
+      "note" : "Multi-resistant clinical isolate",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli B",
+      "activityMeasure" : "MIC",
+      "concentration" : "78.0",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1.2E3-7.5E3",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1.2E3-7.5E3",
+      "note" : "Multi-resistant clinical isolate",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Rat erythrocytes",
+      "lysis" : "50% Hemolysis",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Chembiochem",
+      "articleYear" : 2008,
+      "volume" : "9",
+      "pages" : "2815-2821",
+      "title" : "Melectin: a novel antimicrobial peptide from the venom of the cleptoparasitic bee Melecta albifrons",
+      "pubMed" : "18942691",
+      "authors" : [ "Cerovský V", "Hovorka O", "Cvacka J", "Voburka Z", "Bednárová L", "Borovicková L", "Slaninová J", "Fucík V" ]
+    } ]
+  }
+}

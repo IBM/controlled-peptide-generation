@@ -1,0 +1,68 @@
+{
+  "peptideCard" : {
+    "id" : 7332,
+    "seq" : "wWfHwK",
+    "seqLength" : 6,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.67",
+      "normalizedHydrophobicity" : " 1.17",
+      "netCharge" : " 1.00",
+      "isoelectricPoint" : "10.00"
+    },
+    "intrachainBonds" : [ {
+      "position1" : 1,
+      "position2" : 6,
+      "intrachainBond" : "NCB"
+    } ],
+    "unusualAminoAcids" : [ {
+      "position" : 1,
+      "modificationType" : "D-TRP"
+    }, {
+      "position" : 3,
+      "modificationType" : "D-PHE"
+    }, {
+      "position" : 5,
+      "modificationType" : "D-TRP"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Staphylococcus aureus ATCC 33591",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "cfu" : "5E5",
+      "note" : "MRSA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli ATCC 35218",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "cfu" : "5E5",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Mouse erythrocytes",
+      "lysis" : "50% Hemolysis",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Chemistry",
+      "articleYear" : 2007,
+      "volume" : "13",
+      "pages" : "4008-4013",
+      "title" : "A combinatorial approach to the discovery of biocidal six-residue cyclic D,L-alpha-peptides against the bacteria methicillin-resistant Staphylococcus aureus (MRSA) and E. coli and the biofouling algae Ulva linza and Navicula perminuta.",
+      "pubMed" : "17304598",
+      "authors" : [ "Fletcher JT", "Finlay JA", "Callow ME", "Callow JA", "Ghadiri MR" ]
+    } ]
+  }
+}

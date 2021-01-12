@@ -1,0 +1,61 @@
+{
+  "peptideCard" : {
+    "id" : 2425,
+    "name" : "Melittin (12-26, G14G15)",
+    "seq" : "GLPALISWIKRKRGG",
+    "seqLength" : 15,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.88",
+      "normalizedHydrophobicity" : " 0.19",
+      "netCharge" : " 5.00",
+      "isoelectricPoint" : "14.00"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Staphylococcus aureus",
+      "activityMeasure" : "MIC",
+      "concentration" : "2.60",
+      "unit" : "µg/ml",
+      "medium" : "NB",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis",
+      "activityMeasure" : "MIC",
+      "concentration" : "2.45",
+      "unit" : "µg/ml",
+      "medium" : "NB",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli",
+      "activityMeasure" : "MIC",
+      "concentration" : "78.3",
+      "unit" : "µg/ml",
+      "medium" : "NB",
+      "cfu" : "1E6",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "50% Hemolysis",
+      "concentration" : ">2000",
+      "unit" : "µg/ml",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Peptides",
+      "articleYear" : 2005,
+      "volume" : "26",
+      "pages" : "369-375",
+      "title" : "Deletion of two C-terminal Gln residues of 12-26-residue fragment of melittin improves its antimicrobial activity.",
+      "pubMed" : "15652642",
+      "authors" : [ "Sun X", "Chen S", "Li S", "Yan H", "Fan Y", "Mi H" ]
+    } ]
+  }
+}

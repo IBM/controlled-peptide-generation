@@ -1,0 +1,38 @@
+{
+  "peptideCard" : {
+    "id" : 396,
+    "name" : "B-59",
+    "seq" : "KLVQQLKNIFR",
+    "seqLength" : 11,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 2.22",
+      "normalizedHydrophobicity" : " 0.34",
+      "netCharge" : " 3.00",
+      "isoelectricPoint" : "11.56"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Streptococcus mutans",
+      "activityMeasure" : "MIC",
+      "concentration" : ">125",
+      "unit" : "µg/ml",
+      "medium" : "THB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Antimicrob Agents Chemother",
+      "articleYear" : 2007,
+      "volume" : "51",
+      "pages" : "1351–1358",
+      "title" : "Novel synthetic antimicrobial peptides against Streptococcus mutans",
+      "pubMed" : "17296741",
+      "authors" : [ "He J", "Eckert R", "Pharm T", "Simanian MD", "Hu C", "Yarbrough DK", "Qi F", "Anderson MH", "Shi W" ]
+    } ]
+  }
+}

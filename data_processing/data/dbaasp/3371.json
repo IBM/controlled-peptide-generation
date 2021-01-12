@@ -1,0 +1,85 @@
+{
+  "peptideCard" : {
+    "id" : 3371,
+    "name" : "Panurgine 1/11, PNG-1/11",
+    "seq" : "LNWGAILKHIKK",
+    "seqLength" : 12,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Fungus", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.97",
+      "normalizedHydrophobicity" : " 0.11",
+      "netCharge" : " 4.00",
+      "isoelectricPoint" : "14.00"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Micrococcus luteus CCM 144",
+      "activityMeasure" : "MIC",
+      "concentration" : "10.8",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1E4-5E4",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis 168",
+      "activityMeasure" : "MIC",
+      "concentration" : "13.3",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1E4-5E4",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus",
+      "activityMeasure" : "MIC",
+      "concentration" : "100",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1E4-5E4",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli B",
+      "activityMeasure" : "MIC",
+      "concentration" : "70",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1E4-5E4",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa",
+      "activityMeasure" : "MIC",
+      "concentration" : "93.3",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1E4-5E4",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Candida albicans F7-39/IDE99",
+      "activityMeasure" : "MIC",
+      "concentration" : "11.3",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "cfu" : "1E4-5E4",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "50% Hemolysis",
+      "concentration" : ">200",
+      "unit" : "µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Amino Acids",
+      "articleYear" : 2013,
+      "volume" : "45",
+      "pages" : "143-157",
+      "title" : "Panurgines, novel antimicrobial peptides from the venom of communal bee Panurgus calcaratus (Hymenoptera: Andrenidae).",
+      "pubMed" : "23483218",
+      "authors" : [ "Cujová S", "Slaninová J", "Monincová L", "Fucík V", "Bednárová L", "Stokrová J", "Hovorka O", "Voburka Z", "Straka J", "Cerovský V" ]
+    } ]
+  }
+}

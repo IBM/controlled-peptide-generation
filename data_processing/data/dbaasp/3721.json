@@ -1,0 +1,69 @@
+{
+  "peptideCard" : {
+    "id" : 3721,
+    "name" : "Nigrocin-1-OW5",
+    "seq" : "GILGNIVGMGKQVVCGLSGLC",
+    "seqLength" : 21,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Ribosomal",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Fungus" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.21",
+      "normalizedHydrophobicity" : "-1.23",
+      "netCharge" : " 1.00",
+      "isoelectricPoint" : " 8.11"
+    },
+    "sourceGenes" : [ {
+      "kingdom" : "Animalia",
+      "source" : "Odorrana wuchuanensis",
+      "subKingdom" : "Eumetazoa",
+      "orientation" : "#"
+    } ],
+    "intrachainBonds" : [ {
+      "position1" : 15,
+      "position2" : 21,
+      "intrachainBond" : "DSB"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli ATCC 25922",
+      "activityMeasure" : "MIC",
+      "concentration" : "5.1",
+      "unit" : "µg/ml",
+      "medium" : "LBB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Candida albicans ATCC 2002",
+      "activityMeasure" : "MIC",
+      "concentration" : "5.1",
+      "unit" : "µg/ml",
+      "medium" : "LBB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus ATCC 25923",
+      "activityMeasure" : "MIC",
+      "concentration" : "5.1",
+      "unit" : "µg/ml",
+      "medium" : "LBB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus pyocyaneus CMCCB 10104",
+      "activityMeasure" : "MIC",
+      "concentration" : "10.2",
+      "unit" : "µg/ml",
+      "medium" : "LBB",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "J Proteome Res",
+      "articleYear" : 2012,
+      "volume" : "11",
+      "pages" : "306-319",
+      "title" : "Extremely abundant antimicrobial peptides existed in the skins of nine kinds of Chinese odorous frogs.",
+      "pubMed" : "22029824",
+      "authors" : [ "Yang X", "Lee WH", "Zhang Y" ]
+    } ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "peptideCard" : {
+    "id" : 683,
+    "name" : "Protegrin 1 [C6A][C15A], PG-1 [C6A][C15A], Neutrophil peptide 1 [C6A][C15A]",
+    "seq" : "RGGRLAYCRRRFCVAVGR",
+    "seqLength" : 18,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram-" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.63",
+      "normalizedHydrophobicity" : " 0.33",
+      "netCharge" : " 6.00",
+      "isoelectricPoint" : "11.81"
+    },
+    "intrachainBonds" : [ {
+      "position1" : 8,
+      "position2" : 13,
+      "intrachainBond" : "DSB"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli",
+      "activityMeasure" : "MIC",
+      "concentration" : "2.1",
+      "unit" : "µg/ml",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Neisseria gonorrhoeae F-62",
+      "activityMeasure" : "MIC",
+      "concentration" : "1.1",
+      "unit" : "µg/ml",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Neisseria gonorrhoeae FA-19",
+      "activityMeasure" : "MIC",
+      "concentration" : "5.5",
+      "unit" : "µg/ml",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Listeria monocytogenes",
+      "activityMeasure" : "MIC",
+      "concentration" : "2.6",
+      "unit" : "µg/ml",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Candida albicans",
+      "activityMeasure" : "MIC",
+      "concentration" : "16",
+      "unit" : "µg/ml",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Peptides",
+      "articleYear" : 2005,
+      "volume" : "26",
+      "pages" : "197-206",
+      "title" : "Protegrin structure-activity relationships: using homology models of synthetic sequences to determine structural characteristics important for activity.",
+      "pubMed" : "15629531",
+      "authors" : [ "Ostberg N", "Kaznessis Y" ]
+    } ]
+  }
+}

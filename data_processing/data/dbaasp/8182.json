@@ -1,0 +1,63 @@
+{
+  "peptideCard" : {
+    "id" : 8182,
+    "name" : "LSer-Defensin 6, LSer-Def6",
+    "seq" : "GTCSFSSALCVVHCRVRGYPDGYCSRKGICTCRR",
+    "seqLength" : 34,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Ribosomal",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.23",
+      "normalizedHydrophobicity" : " 0.09",
+      "netCharge" : " 5.00",
+      "isoelectricPoint" : " 8.73"
+    },
+    "sourceGenes" : [ {
+      "kingdom" : "Animalia",
+      "source" : "Lucilia sericata",
+      "subKingdom" : "Eumetazoa",
+      "orientation" : "#"
+    } ],
+    "intrachainBonds" : [ {
+      "position1" : 3,
+      "position2" : 24,
+      "intrachainBond" : "DSB"
+    }, {
+      "position1" : 10,
+      "position2" : 30,
+      "intrachainBond" : "DSB"
+    }, {
+      "position1" : 14,
+      "position2" : 32,
+      "intrachainBond" : "DSB"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli D31",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "LBB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Micrococcus luteus DSM 20030",
+      "activityMeasure" : "MIC",
+      "concentration" : "51.6",
+      "unit" : "µM",
+      "medium" : "TSB",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Antimicrob Agents Chemother",
+      "articleYear" : 2015,
+      "volume" : "59",
+      "pages" : "2508-2514",
+      "title" : "Antimicrobial peptides expressed in medicinal maggots of the blow fly Lucilia sericata show combinatorial activity against bacteria.",
+      "pubMed" : "25666157",
+      "authors" : [ "Pöppel AK", "Vogel H", "Wiesner J", "Vilcinskas A" ]
+    } ]
+  }
+}

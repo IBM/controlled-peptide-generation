@@ -1,0 +1,94 @@
+{
+  "peptideCard" : {
+    "id" : 7627,
+    "seq" : "XX",
+    "seqLength" : 2,
+    "nTerminus" : "C18",
+    "cTerminus" : "SPE",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "unusualAminoAcids" : [ {
+      "position" : 1,
+      "modificationType" : "ORN"
+    }, {
+      "position" : 2,
+      "modificationType" : "ORN"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli ATCC 11775",
+      "activityMeasure" : "MIC",
+      "concentration" : "7.1",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa ATCC 25668",
+      "activityMeasure" : "MIC",
+      "concentration" : "14.2",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Acinetobacter baumannii ATCC 19606",
+      "activityMeasure" : "MIC",
+      "concentration" : "28.4",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus ATCC 29213",
+      "activityMeasure" : "MIC",
+      "concentration" : "3.5",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Enterococcus faecalis ATCC 7080",
+      "activityMeasure" : "MIC",
+      "concentration" : "14.2",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis ATCC 6633",
+      "activityMeasure" : "MIC",
+      "concentration" : "7.1",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus ATCC 33591",
+      "activityMeasure" : "MIC",
+      "concentration" : "3.5",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "note" : "MRSA",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "51% Hemolysis",
+      "concentration" : "62.5",
+      "unit" : "µg/ml",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Org Biomol Chem",
+      "articleYear" : 2012,
+      "volume" : "10",
+      "pages" : "8326-8335",
+      "title" : "Synthesis, antibacterial activity and mode of action of novel linoleic acid-dipeptide-spermidine conjugates.",
+      "pubMed" : "22986997",
+      "authors" : [ "Joshi S", "Dewangan RP", "Yadav S", "Rawat DS", "Pasha S" ]
+    } ]
+  }
+}

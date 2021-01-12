@@ -1,0 +1,36 @@
+{
+  "peptideCard" : {
+    "id" : 8478,
+    "seq" : "XRAR",
+    "seqLength" : 4,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "unusualAminoAcids" : [ {
+      "position" : 1,
+      "modificationType" : "BIP"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Staphylococcus aureus USA 100",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "CAMHB",
+      "cfu" : "1E6",
+      "note" : "MRSA",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Eur J Med Chem",
+      "articleYear" : 2015,
+      "volume" : "105",
+      "pages" : "138-144",
+      "title" : "Discovery of an ultra-short linear antibacterial tetrapeptide with anti-MRSA activity from a structure-activity relationship study.",
+      "pubMed" : "26489599",
+      "authors" : [ "Lau QY", "Ng FM", "Cheong JW", "Yap YY", "Tan YY", "Jureen R", "Hill J", "Chia CS" ]
+    } ]
+  }
+}

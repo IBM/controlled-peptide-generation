@@ -1,0 +1,43 @@
+{
+  "peptideCard" : {
+    "id" : 6173,
+    "seq" : "EAIIRILQQLEFIHKRIGRRRRRRRR",
+    "seqLength" : 26,
+    "nTerminus" : "ACT",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Virus" ],
+    "targets" : [ "HIV-1 Integrase" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.93",
+      "normalizedHydrophobicity" : " 1.22",
+      "netCharge" : "10.00",
+      "isoelectricPoint" : "12.71"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "HIV-1",
+      "activityMeasure" : "IC50 IN 3'EP",
+      "concentration" : "0.71±0.21",
+      "unit" : "µM",
+      "note" : "Inhibition of integrase activity (3' end processing).",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "HIV-1",
+      "activityMeasure" : "IC50 IN ST",
+      "concentration" : "0.06±0.004",
+      "unit" : "µM",
+      "note" : "Inhibition of integrase activity (strand transfer).",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Bioorg Med Chem",
+      "articleYear" : 2010,
+      "volume" : "18",
+      "pages" : "6771-6775",
+      "title" : "Peptidic HIV integrase inhibitors derived from HIV gene products: structure-activity relationship studies.",
+      "pubMed" : "20708407",
+      "authors" : [ "Suzuki S", "Maddali K", "Hashimoto C", "Urano E", "Ohashi N", "Tanaka T", "Ozaki T", "Arai H", "Tsutsumi H", "Narumi T", "Nomura W", "Yamamoto N", "Pommier Y", "Komano JA", "Tamamura H" ]
+    } ]
+  }
+}
