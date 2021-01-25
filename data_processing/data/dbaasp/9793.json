@@ -1,0 +1,335 @@
+{
+  "peptideCard" : {
+    "id" : 9793,
+    "name" : " CAP7 (2-31), CAP18 (136-165), CAP18-MP(FV)(2-31)",
+    "seq" : "LRKRLRKFRNKIKEKLKKIGQKIQGFVPKL",
+    "seqLength" : 30,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.85",
+      "normalizedHydrophobicity" : " 1.03",
+      "netCharge" : "12.00",
+      "isoelectricPoint" : "12.21"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Bacillus cereus CGMCC 1.1846",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus megaterium CGMCC 1.0459",
+      "activityMeasure" : "LC",
+      "concentration" : "1.46",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis CGMCC 1.2428",
+      "activityMeasure" : "LC",
+      "concentration" : " 1.45",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Micrococcus luteus CGMCC 1.0290",
+      "activityMeasure" : "LC",
+      "concentration" : "0.90",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus CGMCC 1.89",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus J685",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "LBA",
+      "note" : "S. aureus J685, 698, J700, J706, J708,J710",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus epidermidis P1111",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "LBA",
+      "note" : "Penicillin-sensitive",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus P1369",
+      "activityMeasure" : "LC",
+      "concentration" : "1.44",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "Methicillin-resistant coagulase negative Staphylococci",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus P1374",
+      "activityMeasure" : "LC",
+      "concentration" : " 1.46",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "MRSA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus P1381",
+      "activityMeasure" : "LC",
+      "concentration" : " 1.46",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "MRSA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus P1383",
+      "activityMeasure" : "LC",
+      "concentration" : "1.35",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "Penicillin-resistant",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus epidermidis P1386",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "LBA",
+      "note" : "Penicillin-resistant",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus epidermidis P1389",
+      "activityMeasure" : "LC",
+      "concentration" : "1.15",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "Penicillin-resistant",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus warneri ATCC 1.2824",
+      "activityMeasure" : "LC",
+      "concentration" : "0.78",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Streptomyces griseus NBRC 13350",
+      "activityMeasure" : "LC",
+      "concentration" : "8.84",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Streptomyces scabiei CGMCC 4.1765",
+      "activityMeasure" : "LC",
+      "concentration" : "3.10",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Streptococcus mutans ATCC 1.2499",
+      "activityMeasure" : "LC",
+      "concentration" : "0.73",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Streptococcus salivarius ATCC 1.2498",
+      "activityMeasure" : "LC",
+      "concentration" : "2.66",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Streptococcus sanguinis ATCC 1.2497",
+      "activityMeasure" : "LC",
+      "concentration" : "1.75",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Alcaligenes faecalis CGMCC 1.1837",
+      "activityMeasure" : "LC",
+      "concentration" : "1.92",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli ATCC 25922",
+      "activityMeasure" : "LC",
+      "concentration" : "1.63",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli DH5alpha",
+      "activityMeasure" : "LC",
+      "concentration" : "1.46",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli JM109",
+      "activityMeasure" : "LC",
+      "concentration" : "1.50",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli TOP 10",
+      "activityMeasure" : "LC",
+      "concentration" : "1.33",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli Am. J16c",
+      "activityMeasure" : "LC",
+      "concentration" : "1.01",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli Am. J23a",
+      "activityMeasure" : "LC",
+      "concentration" : "1.33",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "E. coli Am. J23a, D. G2b",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli CIP. J14b",
+      "activityMeasure" : "LC",
+      "concentration" : "1.77",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Serratia marcescens ATCC 14041",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa PAO1",
+      "activityMeasure" : "LC",
+      "concentration" : "2.10",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa PA14",
+      "activityMeasure" : "LC",
+      "concentration" : "2.67",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa FRD1",
+      "activityMeasure" : "LC",
+      "concentration" : "3.33",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa 374",
+      "activityMeasure" : "LC",
+      "concentration" : "4.42",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa 11082603",
+      "activityMeasure" : "LC",
+      "concentration" : "2.66",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "P. aeruginosa 11082603 and 11092618",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa 11082616",
+      "activityMeasure" : "LC",
+      "concentration" : "3.54",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "P. aeruginosa 11082616, 11092304,  QT1",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas solanacearum",
+      "activityMeasure" : "LC",
+      "concentration" : "2.19",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Salmonella enterica ATCC 14028",
+      "activityMeasure" : "LC",
+      "concentration" : "1.47",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Salmonella DZ. 3G",
+      "activityMeasure" : "LC",
+      "concentration" : "2.92",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Salmonella WFH. 9N",
+      "activityMeasure" : "LC",
+      "concentration" : "1.41",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Salmonella WFM. 5N",
+      "activityMeasure" : "LC",
+      "concentration" : "3.54",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "note" : "Salmonella WFM. 5N, ZQ. 17N, ZQ. 18X",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Stenotrophomonas maltophilia CGMCC 1.1788",
+      "activityMeasure" : "LC",
+      "concentration" : "2.99",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Xanthomonas oryzae pv. oryzae",
+      "activityMeasure" : "LC",
+      "concentration" : "4.86",
+      "unit" : "µM",
+      "medium" : "LBA",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Mouse erythrocytes",
+      "lysis" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "note" : "Not active up to 25 µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Heredity (Edinb)",
+      "articleYear" : 2016,
+      "title" : "Positive selection in cathelicidin host defense peptides: adaptation to exogenous pathogens or endogenous receptors?",
+      "pubMed" : "27925615",
+      "authors" : [ "Zhu S", "Gao B" ]
+    } ]
+  }
+}

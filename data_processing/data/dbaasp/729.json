@@ -1,0 +1,46 @@
+{
+  "peptideCard" : {
+    "id" : 729,
+    "name" : "Histatin 5 (5-22)",
+    "seq" : "KRHHGYKRKFHEKHHSHR",
+    "seqLength" : 18,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Fungus" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.18",
+      "normalizedHydrophobicity" : " 2.86",
+      "netCharge" : " 6.00",
+      "isoelectricPoint" : "11.48"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Candida albicans ATCC 44505",
+      "activityMeasure" : "LD50",
+      "concentration" : "10.7±5.49",
+      "unit" : "µg/ml",
+      "medium" : "SDA",
+      "cfu" : "1E4",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Candida albicans ATCC 44505",
+      "activityMeasure" : "LD90",
+      "concentration" : "24.8±8.1",
+      "unit" : "µg/ml",
+      "medium" : "SDA",
+      "cfu" : "1E4",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Antimicrob Agents Chemother",
+      "articleYear" : 2001,
+      "volume" : "45",
+      "pages" : "1367-1373",
+      "title" : "Anticandida activity is retained in P-113, a 12-amino-acid fragment of histatin 5",
+      "pubMed" : "11302797",
+      "authors" : [ "Rothstein DM", "Spacciapoli P", "Tran LT", "Xu T", "Roberts FD", "Dalla Serra M", "Buxton DK", "Oppenheim FG", "Friden P" ]
+    } ]
+  }
+}

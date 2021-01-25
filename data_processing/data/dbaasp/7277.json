@@ -1,0 +1,82 @@
+{
+  "peptideCard" : {
+    "id" : 7277,
+    "name" : "Fallaxin [L6A]",
+    "seq" : "GVVDIAKGAAKDIAGHLASKVMNKL",
+    "seqLength" : 25,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.56",
+      "normalizedHydrophobicity" : "-0.35",
+      "netCharge" : " 3.00",
+      "isoelectricPoint" : "10.70"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Klebsiella pneumoniae ATCC 700603",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli ATCC 25922",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa ATCC 27853",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus ATCC 33591",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "note" : "Methicillin-susceptible (MSSA)",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus ATCC 700699 MU50",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "note" : "Vancomycin-intermediate-resistant (VISA)",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus ATCC 29213",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "note" : "MRSA",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "0% Hemolysis",
+      "concentration" : "50",
+      "unit" : "µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Protein Sci",
+      "articleYear" : 2007,
+      "volume" : "16",
+      "pages" : "1969-1976",
+      "title" : "Structure - activity study of the antibacterial peptide fallaxin.",
+      "pubMed" : "17766389",
+      "authors" : [ "Nielsen SL", "Frimodt-Møller N", "Kragelund BB", "Hansen PR" ]
+    } ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "peptideCard" : {
+    "id" : 1659,
+    "name" : "15Hc, Halocidin subunit A (1-15)",
+    "seq" : "WLNALLHHGLNCAKG",
+    "seqLength" : 15,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram-", "Gram+" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.32",
+      "normalizedHydrophobicity" : "-0.15",
+      "netCharge" : " 2.00",
+      "isoelectricPoint" : "10.02"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli KCCM 11569",
+      "activityMeasure" : "MIC",
+      "concentration" : ">64",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "2E4-2E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis KCCM 11495",
+      "activityMeasure" : "MIC",
+      "concentration" : ">64",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "2E4-2E5",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Antimicrob Agents Chemother",
+      "articleYear" : 2003,
+      "volume" : "47",
+      "pages" : "2481-2486",
+      "title" : "Biological activities of synthetic analogs of halocidin, an antimicrobial peptide from the tunicate Halocynthia aurantium.",
+      "pubMed" : "12878508",
+      "authors" : [ "Jang WS", "Kim CH", "Kim KN", "Park SY", "Lee JH", "Son SM", "Lee IH" ]
+    } ]
+  }
+}

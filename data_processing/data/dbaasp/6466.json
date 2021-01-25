@@ -1,0 +1,88 @@
+{
+  "peptideCard" : {
+    "id" : 6466,
+    "name" : "Adepantin-1",
+    "seq" : "GIGKHVGKALKGLKGLLKGLGES",
+    "seqLength" : 23,
+    "nTerminus" : "ACT",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.48",
+      "normalizedHydrophobicity" : " 0.01",
+      "netCharge" : " 5.00",
+      "isoelectricPoint" : "11.28"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli K91BK",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "NZCYM",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli K91BK",
+      "activityMeasure" : "IC50",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "NZCYM",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis var. niger ATCC 9372",
+      "activityMeasure" : "MIC",
+      "concentration" : ">=100",
+      "unit" : "µM",
+      "medium" : "NZCYM",
+      "note" : "Syn. Bacillus globigii",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis var. niger ATCC 9372",
+      "activityMeasure" : "IC50",
+      "concentration" : "100±15.0",
+      "unit" : "µM",
+      "medium" : "NZCYM",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus anthracis Sterne 34F2",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "NZCYM",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus anthracis Sterne 34F2",
+      "activityMeasure" : "IC50",
+      "concentration" : ">100",
+      "unit" : "µM",
+      "medium" : "NZCYM",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Burkholderia thailandensis ATCC 700388",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "NZCYM",
+      "note" : "Not active up to 100 µM",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "0% Hemolysis",
+      "concentration" : "100",
+      "unit" : "µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Int J Antimicrob Agents",
+      "articleYear" : 2011,
+      "volume" : "38",
+      "pages" : "237-242",
+      "title" : "Potent antimicrobial peptides with selectivity for Bacillus anthracis over human erythrocytes.",
+      "pubMed" : "21741801",
+      "authors" : [ "Dawson RM", "Fox MA", "Atkins HS", "Liu CQ" ]
+    } ]
+  }
+}

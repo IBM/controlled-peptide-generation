@@ -1,0 +1,59 @@
+{
+  "peptideCard" : {
+    "id" : 9269,
+    "seq" : "KPV",
+    "seqLength" : 3,
+    "nTerminus" : "C15",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Fungus" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 2.74",
+      "normalizedHydrophobicity" : " 0.43",
+      "netCharge" : " 2.00",
+      "isoelectricPoint" : "14.00"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli UB1005",
+      "activityMeasure" : "MIC",
+      "concentration" : "64",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5-1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus SAP 0017",
+      "activityMeasure" : "MIC",
+      "concentration" : "16",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5-1E6",
+      "note" : "MRSA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Candida albicans 105",
+      "activityMeasure" : "MIC",
+      "concentration" : "32",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E4",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Propionibacterium acnes",
+      "activityMeasure" : "MIC",
+      "concentration" : "1",
+      "unit" : "µg/ml",
+      "medium" : "BHIB",
+      "cfu" : "1E5-1E6",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Patent US 20150080291 A1",
+      "articleYear" : 2015,
+      "title" : "Short Antimicrobial Lipopeptides",
+      "authors" : [ "Zhang L", "Carmichael R" ]
+    } ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "peptideCard" : {
+    "id" : 3664,
+    "seq" : "KLKKLWKKLLKC",
+    "seqLength" : 12,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.89",
+      "normalizedHydrophobicity" : " 0.55",
+      "netCharge" : " 7.00",
+      "isoelectricPoint" : "11.37"
+    },
+    "articles" : [ {
+      "journal" : "BMB Rep",
+      "articleYear" : 2011,
+      "volume" : "44",
+      "pages" : "747-752",
+      "title" : "Effect of disulphide bond position on salt resistance and LPS-neutralizing activity of a-helical homo-dimeric model antimicrobial peptides.",
+      "pubMed" : "22118542",
+      "authors" : [ "Nan YH", "Shin SY" ]
+    } ]
+  }
+}

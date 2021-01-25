@@ -1,0 +1,36 @@
+{
+  "peptideCard" : {
+    "id" : 6523,
+    "name" : "C41 [S20X]",
+    "seq" : "EWDREINNYTSLIHSLIEEXQNQQEKNEQELLELDKWASLW",
+    "seqLength" : 41,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Virus" ],
+    "targets" : [ "gp41" ],
+    "unusualAminoAcids" : [ {
+      "position" : 20,
+      "modificationType" : "PEG750-CYS"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "HIV-1",
+      "activityMeasure" : "IC50",
+      "concentration" : ">0.4",
+      "unit" : "µM",
+      "ionicStrength" : ".",
+      "note" : "Inhibition of cell-cell fusion.",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Bioconjug Chem",
+      "articleYear" : 2012,
+      "volume" : "23",
+      "pages" : "1648-1660",
+      "title" : "Site-specific PEGylation of HR2 peptides: effects of PEG conjugation position and chain length on HIV-1 membrane fusion inhibition and proteolytic degradation.",
+      "pubMed" : "22770564",
+      "authors" : [ "Danial M", "van Dulmen TH", "Aleksandrowicz J", "Pötgens AJ", "Klok HA" ]
+    } ]
+  }
+}

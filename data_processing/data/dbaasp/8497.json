@@ -1,0 +1,77 @@
+{
+  "peptideCard" : {
+    "id" : 8497,
+    "name" : "W - Myxinidin [H3R,D4R,P11R]",
+    "seq" : "WGIRRILKYGKRS",
+    "seqLength" : 13,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.80",
+      "normalizedHydrophobicity" : " 0.95",
+      "netCharge" : " 5.00",
+      "isoelectricPoint" : "11.88"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli ATCC 11219",
+      "activityMeasure" : "MIC",
+      "concentration" : "10",
+      "unit" : "µM",
+      "medium" : "CAMHB",
+      "cfu" : "5E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa ATCC 13388",
+      "activityMeasure" : "MIC",
+      "concentration" : "4",
+      "unit" : "µM",
+      "medium" : "CAMHB",
+      "cfu" : "5E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Salmonella enterica serovar Typhimurium ATCC 14028",
+      "activityMeasure" : "MIC",
+      "concentration" : "10",
+      "unit" : "µM",
+      "medium" : "CAMHB",
+      "cfu" : "5E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Klebsiella pneumoniae ATCC 10031",
+      "activityMeasure" : "MIC",
+      "concentration" : "20",
+      "unit" : "µM",
+      "medium" : "CAMHB",
+      "cfu" : "5E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus ATCC 6538",
+      "activityMeasure" : "MIC",
+      "concentration" : "4",
+      "unit" : "µM",
+      "medium" : "CAMHB",
+      "cfu" : "5E5",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "4% Hemolysis",
+      "concentration" : "200",
+      "unit" : "µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Antimicrob Agents Chemother",
+      "articleYear" : 2014,
+      "volume" : "58",
+      "pages" : "5280-5390",
+      "title" : "Structural insights into and activity analysis of the antimicrobial peptide myxinidin.",
+      "pubMed" : "24957834",
+      "authors" : [ "Cantisani M", "Finamore E", "Mignogna E", "Falanga A", "Nicoletti GF", "Pedone C", "Morelli G", "Leone M", "Galdiero M", "Galdiero S" ]
+    } ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "peptideCard" : {
+    "id" : 8028,
+    "name" : "Trichorzin PA IX",
+    "seq" : "XSAXXQXVXGLXPLXXQX",
+    "seqLength" : 18,
+    "nTerminus" : "ACT",
+    "cTerminus" : "#",
+    "synthesisType" : "Nonribosomal",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Mollicute" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "sourceGenes" : [ {
+      "kingdom" : "Fungi",
+      "source" : "Trichoderma harzianum",
+      "orientation" : "#"
+    } ],
+    "unusualAminoAcids" : [ {
+      "position" : 1,
+      "modificationType" : "AIB"
+    }, {
+      "position" : 4,
+      "modificationType" : "Iso-Val"
+    }, {
+      "position" : 5,
+      "modificationType" : "Iso-Val"
+    }, {
+      "position" : 7,
+      "modificationType" : "AIB"
+    }, {
+      "position" : 9,
+      "modificationType" : "AIB"
+    }, {
+      "position" : 12,
+      "modificationType" : "AIB"
+    }, {
+      "position" : 15,
+      "modificationType" : "AIB"
+    }, {
+      "position" : 16,
+      "modificationType" : "AIB"
+    }, {
+      "position" : 18,
+      "modificationType" : "PHEol"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Acholeplasma laidlawii",
+      "activityMeasure" : "MIC",
+      "concentration" : "6.25",
+      "unit" : "µM",
+      "medium" : "PPLO",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Mycoplasma gallisepticum",
+      "activityMeasure" : "MIC",
+      "concentration" : "25",
+      "unit" : "µM",
+      "medium" : "PPLO",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Mycoplasma genitalium",
+      "activityMeasure" : "MIC",
+      "concentration" : "6.25",
+      "unit" : "µM",
+      "medium" : "PPLO",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Mycoplasma mycoides ssp. mycoides SC",
+      "activityMeasure" : "MIC",
+      "concentration" : "50",
+      "unit" : "µM",
+      "medium" : "PPLO",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Spiroplasma apis",
+      "activityMeasure" : "MIC",
+      "concentration" : "25",
+      "unit" : "µM",
+      "medium" : "PPLO",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Spiroplasma citri",
+      "activityMeasure" : "MIC",
+      "concentration" : "12.5",
+      "unit" : "µM",
+      "medium" : "PPLO",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Spiroplasma floricola",
+      "activityMeasure" : "MIC",
+      "concentration" : "25",
+      "unit" : "µM",
+      "medium" : "PPLO",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Spiroplasma melliferum",
+      "activityMeasure" : "MIC",
+      "concentration" : "25",
+      "unit" : "µM",
+      "medium" : "PPLO",
+      "cfu" : "1E6",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Biochim Biophys Acta",
+      "articleYear" : 1998,
+      "volume" : "1372",
+      "pages" : "78-90",
+      "title" : "Membrane permeabilisation and antimycoplasmic activity of the 18-residue peptaibols, trichorzins PA.",
+      "pubMed" : "9651487",
+      "authors" : [ "Béven L", "Duval D", "Rebuffat S", "Riddell FG", "Bodo B", "Wróblewski H" ]
+    } ]
+  }
+}

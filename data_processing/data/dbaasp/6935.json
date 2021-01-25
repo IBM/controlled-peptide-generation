@@ -1,0 +1,53 @@
+{
+  "peptideCard" : {
+    "id" : 6935,
+    "name" : "Pseudin-2 [I12F]",
+    "seq" : "GLNALKKVFQGFHEAIKLINNHVQ",
+    "seqLength" : 24,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.54",
+      "normalizedHydrophobicity" : " 0.08",
+      "netCharge" : " 2.00",
+      "isoelectricPoint" : "10.44"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli ATCC 25922",
+      "activityMeasure" : "MIC",
+      "concentration" : ">80",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "cfu" : "1E6",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus NCTC 8325",
+      "activityMeasure" : "MIC",
+      "concentration" : ">160",
+      "unit" : "µM",
+      "medium" : "MHB",
+      "cfu" : "1E6",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "50% Hemolysis",
+      "concentration" : "370",
+      "unit" : "µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Regul Pept",
+      "articleYear" : 2005,
+      "volume" : "129",
+      "pages" : "85-91",
+      "title" : "Design of potent, non-toxic antimicrobial agents based upon the structure of the frog skin peptide, pseudin-2.",
+      "pubMed" : "15927702",
+      "authors" : [ "Pál T", "Sonnevend A", "Galadari S", "Conlon JM" ]
+    } ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "peptideCard" : {
+    "id" : 2833,
+    "name" : "HV-BBI(3-18)",
+    "seq" : "IGCWTKSIPPRPCFVK",
+    "seqLength" : 16,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.35",
+      "normalizedHydrophobicity" : "-0.07",
+      "netCharge" : " 4.00",
+      "isoelectricPoint" : "10.70"
+    },
+    "intrachainBonds" : [ {
+      "position1" : 3,
+      "position2" : 13,
+      "intrachainBond" : "DSB"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli PCM 2057",
+      "activityMeasure" : "MIC",
+      "concentration" : ">1000",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus PCM 1944",
+      "activityMeasure" : "MIC",
+      "concentration" : ">1000",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli PCM 2057",
+      "activityMeasure" : "MIC",
+      "concentration" : "160",
+      "unit" : "µg/ml",
+      "medium" : "DMB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus PCM 1944",
+      "activityMeasure" : "MIC",
+      "concentration" : "80",
+      "unit" : "µg/ml",
+      "medium" : "DMB",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Peptides",
+      "articleYear" : 2012,
+      "volume" : "35",
+      "pages" : "276-284",
+      "title" : "Inhibitory and antimicrobial activities of OGTI and HV-BBI peptides, fragments and analogs derived from amphibian skin",
+      "pubMed" : "22516177",
+      "authors" : [ "Debowski D", "Lukajtis R", "Legowska A", "Karna N", "Pikula M", "Wysocka M", "Maliszewska I", "Sienczyk M", "Lesner A", "Rolka K" ]
+    } ]
+  }
+}

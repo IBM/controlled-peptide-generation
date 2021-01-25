@@ -1,0 +1,100 @@
+{
+  "peptideCard" : {
+    "id" : 7762,
+    "name" : "MrMBL-C16",
+    "seq" : "GGLFYVKHKEQQRKRF",
+    "seqLength" : 16,
+    "nTerminus" : "#",
+    "cTerminus" : "#",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Mammalian Cell" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 0.19",
+      "normalizedHydrophobicity" : " 1.43",
+      "netCharge" : " 4.00",
+      "isoelectricPoint" : "10.98"
+    },
+    "targetActivities" : [ {
+      "targetSpecies" : "Bacillus subtilis",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "TSA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus licheniformis",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "TSA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus coagulans",
+      "activityMeasure" : "-",
+      "concentration" : "NA",
+      "unit" : "-",
+      "medium" : "TSA",
+      "reference" : "1"
+    } ],
+    "hemoliticCytotoxicActivities" : [ {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "8% Hemolysis",
+      "concentration" : "5",
+      "unit" : "µM",
+      "reference" : "1"
+    }, {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "12% Hemolysis",
+      "concentration" : "10",
+      "unit" : "µM",
+      "reference" : "1"
+    }, {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "19% Hemolysis",
+      "concentration" : "25",
+      "unit" : "µM",
+      "reference" : "1"
+    }, {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "25% Hemolysis",
+      "concentration" : "50",
+      "unit" : "µM",
+      "reference" : "1"
+    }, {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "31% Hemolysis",
+      "concentration" : "100",
+      "unit" : "µM",
+      "reference" : "1"
+    }, {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "37% Hemolysis",
+      "concentration" : "150",
+      "unit" : "µM",
+      "reference" : "1"
+    }, {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "42% Hemolysis",
+      "concentration" : "200",
+      "unit" : "µM",
+      "reference" : "1"
+    }, {
+      "targetCell" : "Human erythrocytes",
+      "lysis" : "47% Hemolysis",
+      "concentration" : "250",
+      "unit" : "µM",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Fish Shellfish Immunol",
+      "articleYear" : 2015,
+      "volume" : "43",
+      "pages" : "364-374",
+      "title" : "Macrobrachium rosenbergii mannose binding lectin: Synthesis of MrMBL-N20 and MrMBL-C16 peptides and their antimicrobial characterization, bioinformatics and relative gene expression analysis.",
+      "pubMed" : "25575476",
+      "authors" : [ "Arockiaraj J", "Chaurasia MK", "Kumaresan V", "Palanisamy R", "Harikrishnan R", "Pasupuleti M", "Kasi M" ]
+    } ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "peptideCard" : {
+    "id" : 2976,
+    "name" : "Aurein-2.3",
+    "seq" : "GLFDIVKKVVGAIGSL",
+    "seqLength" : 16,
+    "nTerminus" : "#",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Ribosomal",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram-", "Gram+" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "physicoChemicalProperty" : {
+      "normalizedHydrophobicMoment" : " 1.74",
+      "normalizedHydrophobicity" : "-1.28",
+      "netCharge" : " 2.00",
+      "isoelectricPoint" : "10.73"
+    },
+    "mdStructuralModel" : {
+      "representativeStructure" : "http://dbaasp.org/si?type=file&file=2976_representative_structure.pdb",
+      "selfConsistency" : "http://dbaasp.org/si?type=image&file=2976_self_consistency.png",
+      "secondaryStructure" : "http://dbaasp.org/si?type=image&file=2976_secondary_structure.png",
+      "trajectory" : "http://dbaasp.org/si?type=video&file=2976_trajectory_movie.mpg"
+    },
+    "sourceGenes" : [ {
+      "kingdom" : "Animalia",
+      "source" : "Litoria aurea",
+      "subKingdom" : "Eumetazoa",
+      "orientation" : "#"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Bacillus cereus",
+      "activityMeasure" : "MIC",
+      "concentration" : "100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Escherichia coli",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Leuconostoc lactis",
+      "activityMeasure" : "MIC",
+      "concentration" : "25",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Listeria innocua",
+      "activityMeasure" : "MIC",
+      "concentration" : "100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Micrococcus luteus",
+      "activityMeasure" : "MIC",
+      "concentration" : "100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pasteurella multocida",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus",
+      "activityMeasure" : "MIC",
+      "concentration" : "100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus epidermidis",
+      "activityMeasure" : "MIC",
+      "concentration" : "100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Streptococcus uberis",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus cereus C737",
+      "activityMeasure" : "MIC",
+      "concentration" : "128",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "2E5",
+      "reference" : "2"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa PAO1",
+      "activityMeasure" : "MIC",
+      "concentration" : ">128",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "2E5",
+      "reference" : "2"
+    }, {
+      "targetSpecies" : "Escherichia coli UB1005",
+      "activityMeasure" : "MIC",
+      "concentration" : "32",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "2E5",
+      "reference" : "2"
+    } ],
+    "articles" : [ {
+      "journal" : "Eur J Biochem",
+      "articleYear" : 2000,
+      "volume" : "267",
+      "pages" : "5330-5341",
+      "title" : "The antibiotic and anticancer active aurein peptides from the Australian Bell Frogs Litoria aurea and Litoria raniformis the solution structure of aurein 1.2.",
+      "pubMed" : "10951191",
+      "authors" : [ "Rozek T", "Wegener KL", "Bowie JH", "Olver IN", "Carver JA", "Wallace JC", "Tyler MJ" ]
+    }, {
+      "journal" : "Biochim Biophys Acta",
+      "articleYear" : 2011,
+      "volume" : "1808",
+      "pages" : "622-633",
+      "title" : "The importance of bacterial membrane composition in the structure and function of aurein 2.2 and selected variants.",
+      "pubMed" : "21144817",
+      "authors" : [ "Cheng JT", "Hale JD", "Elliott M", "Hancock RE", "Straus SK" ]
+    } ]
+  }
+}

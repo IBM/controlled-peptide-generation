@@ -1,0 +1,110 @@
+{
+  "peptideCard" : {
+    "id" : 7298,
+    "name" : "LP3",
+    "seq" : "X",
+    "seqLength" : 1,
+    "nTerminus" : "C12-NH",
+    "cTerminus" : "AMD",
+    "synthesisType" : "Synthetic",
+    "complexity" : "Monomer",
+    "targetGroups" : [ "Gram+", "Gram-", "Fungus" ],
+    "targets" : [ "Lipid Bilayer" ],
+    "unusualAminoAcids" : [ {
+      "position" : 1,
+      "modificationType" : "ORN"
+    } ],
+    "targetActivities" : [ {
+      "targetSpecies" : "Escherichia coli MTCC 723",
+      "activityMeasure" : "MIC",
+      "concentration" : "100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Pseudomonas aeruginosa MTCC 2295",
+      "activityMeasure" : "MIC",
+      "concentration" : "50",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus MTCC 3160",
+      "activityMeasure" : "MIC",
+      "concentration" : "100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Bacillus subtilis MTCC 2763",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus aureus ATCC BAA-1720",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "note" : "MRSA",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Staphylococcus epidermidis ATCC 51625",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "MHB",
+      "cfu" : "1E5",
+      "note" : "MRSE",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Candida albicans ATCC 24433",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "PDB",
+      "cfu" : "2E3",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Aspergillus fumigatus ATCC 42203",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "PDB",
+      "cfu" : "2E3",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Aspergillus niger ATCC 64028",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "PDB",
+      "cfu" : "2E3",
+      "reference" : "1"
+    }, {
+      "targetSpecies" : "Cryptococcus neoformans ATCC 2344",
+      "activityMeasure" : "MIC",
+      "concentration" : ">100",
+      "unit" : "µg/ml",
+      "medium" : "PDB",
+      "cfu" : "2E3",
+      "reference" : "1"
+    } ],
+    "articles" : [ {
+      "journal" : "Chem Biol Drug Des",
+      "articleYear" : 2013,
+      "volume" : "82",
+      "pages" : "557-566",
+      "title" : "Systematic study of non-natural short cationic lipopeptides as novel broad-spectrum antimicrobial agents.",
+      "pubMed" : "23819506",
+      "authors" : [ "Lohan S", "Cameotra SS", "Bisht GS" ]
+    } ]
+  }
+}
