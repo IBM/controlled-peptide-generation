@@ -1,5 +1,5 @@
 # Accelerating Antimicrobial Discovery with Controllable Deep Generative Models and Molecular Dynamics
-###This work is published in _Nature Biomedical Engineering_, 2020
+### This work is published in _Nature Biomedical Engineering_, 2020
 ### URL :  https://dx.doi.org/10.1038/s41551-021-00689-x 
 
 > De novo therapeutic design is challenged by a vast chemical repertoire and multiple constraints, e.g.,
