@@ -340,7 +340,7 @@ def main(args={}):
     vocab = Vocab(VOCAB_PATH)
     load_trained_model(MODEL_PATH,
                        vocab.size())
-    LOG.info('laded successfully. For more tests, run evals/static_eval.py')
+    LOG.info('loaded successfully. For more tests, run evals/static_eval.py')
 
 
 if __name__ == "__main__":
