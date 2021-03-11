@@ -30,7 +30,7 @@ features derived from atomistic simulations.
 + UNIPROT: [https://www.uniprot.org/uniprot/?query=reviewed:yes] and [https://www.uniprot.org/uniprot/?query=reviewed:no]
 + SATPDB: [http://crdd.osdd.net/raghava/satpdb/]
 + DBAASP: [https://dbaasp.org]
-+ AMPEP: [http://cbbio.cis.umac.mo/software/AmPEP/]
++ AMPEP: [https://cbbio.cis.um.edu.mo/software/AmPEP/]
 + ToxinPred: [https://webs.iiitd.edu.in/raghava/toxinpred/dataset.php]
 
 ## Related Visualization Tools
