@@ -1,6 +1,6 @@
 # Accelerating Antimicrobial Discovery with Controllable Deep Generative Models and Molecular Dynamics
 ### This work will be published in _Nature Biomedical Engineering_ on March 11, 2021
-### URL :  https://dx.doi.org/10.1038/s41551-021-00689-x 
+### URL :  https://www.nature.com/articles/s41551-021-00689-x 
 
 > De novo therapeutic design is challenged by a vast chemical repertoire and multiple constraints, e.g.,
 >  high broad-spectrum potency and low toxicity. This project proposes CLaSS (Controlled Latent attribute 
