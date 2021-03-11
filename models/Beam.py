@@ -1,5 +1,6 @@
 import torch
 
+
 class Beam(object):
     """
     Class for managing the internals of the beam search process.
@@ -28,8 +29,8 @@ class Beam(object):
 
         # The outputs at each time-step.
         self.next_ys = [torch.LongTensor(size)
-                        .to(self.device)
-                        .fill_(pad)]
+                            .to(self.device)
+                            .fill_(pad)]
         self.next_ys[0][0] = bos
 
         # Has EOS topped the beam yet.
@@ -71,7 +72,7 @@ class Beam(object):
         # Sum the previous scores.
         if len(self.prev_ks) > 0:
             beam_scores = word_probs + \
-                self.scores.unsqueeze(1).expand_as(word_probs)
+                          self.scores.unsqueeze(1).expand_as(word_probs)
             # Don't let EOS have children.
             for i in range(self.next_ys[-1].size(0)):
                 if self.next_ys[-1][i] == self._eos:
@@ -88,7 +89,8 @@ class Beam(object):
 
         # best_scores_id is flattened beam x word array, so calculate which
         # word and beam each score came from
-        prev_k = best_scores_id / num_words
+        prev_k = best_scores_id // num_words
+
         self.prev_ks.append(prev_k)
         self.next_ys.append((best_scores_id - prev_k * num_words))
 

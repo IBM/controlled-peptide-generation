@@ -1,15 +1,34 @@
-# Controlled  Peptide Sequence Generation With Deep Autoencoder
-# Setup 
-+ setup own packages: create your own conda Env, or update existing
-+ Use the amp_gen.yml to create your own conda env to run this project. 
-+ Use this command `conda-env create -n myEnvName -f amp_gen.yml`
+# Accelerating Antimicrobial Discovery with Controllable Deep Generative Models and Molecular Dynamics
+###This work is published in _Nature Biomedical Engineering_, 2020
+### URL :  https://dx.doi.org/10.1038/s41551-021-00689-x 
 
-# Usage
-+ `./run.sh`. This will run with default config from `cfg.py`. Since `cfg.runname=default` output goes to `output/default` and `tb/default`.
-    - `python main.py --tiny 1` for fast testing with default config file. This will also have `cfg.runname=default` so output goes to `output/default` and `tb/default`.
+> De novo therapeutic design is challenged by a vast chemical repertoire and multiple constraints, e.g.,
+>  high broad-spectrum potency and low toxicity. This project proposes CLaSS (Controlled Latent attribute 
+Space Sampling) - an efficient computational method for attribute-controlled generation of molecules, which leverages 
+guidance from classifiers trained on an informative latent space of molecules modeled using a deep generative autoencoder. 
+We screen the generated molecules for additional key attributes by using deep learning classifiers in conjunction with novel 
+features derived from atomistic simulations.
 
 
-# Citations
+
+## Setup 
++ The `amp_gen.yml` lists are the required dependencies for the project.
++ Use `amp_gen.yml` to create your own conda environment to run this project. Command: `conda-env create -f amp_gen.yml`
+
+## Usage
+
+### Phase 1: Autoencoder (VAE/WAE) Training
++ `./run.sh`. This will run with default config from `cfg.py`. Since `cfg.runname=default` the output goes to `output/default` and `tb/default`.
++ `python main.py --tiny 1` for fast testing with default config file.
++ Additionally, one could explicitly run the individual scripts as follows:
+  * > python main.py --phase 1
+  * > python static_eval.py --config_json output/dir/config_overrides.json
+
+## Related Visualization Tools
++ Peptide Walker : [https://peptide-walk.mybluemix.net](https://peptide-walk.mybluemix.net)
++ Cogmol Drug Exploration: [https://covid19-mol.mybluemix.net](https://covid19-mol.mybluemix.net)
+
+## Citations
 
 Please cite the following articles:
 

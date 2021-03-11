@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+
 def build_flow(flow_type, flow_layers, z_dim):
     if flow_type == 'planar':
         return PlanarFlow(flow_layers, z_dim)
@@ -19,10 +20,8 @@ class Flow(nn.Module):
         super(Flow, self).__init__()
         self.flow = flow_layers
 
-
     def forward(self, z, train=True):
         return self._run_flow(z, train)
-
 
     def _run_flow(self, z, train=True):
         raise NotImplementedError
@@ -57,7 +56,7 @@ class PlanarFlow(Flow):
                 loss += torch.log(det_grad.abs().squeeze(1) + 1e-7)  # for numerical stability
         z.flowed = True
         if train:
-            loss = loss.mean(0) # batch averaging
+            loss = loss.mean(0)  # batch averaging
             return z, loss
         else:
             return z
@@ -75,7 +74,6 @@ class RadialFlow(Flow):
             self.radial_alpha[i].data.uniform_(0.01, 1.0)
             self.radial_beta[i].data.uniform_(-0.01, 0.01)
 
-
     def _run_flow(self, z, train=True):
         loss = torch.zeros(z.size(0)).to(z.device)
         for i in range(self.flow):
@@ -87,12 +85,13 @@ class RadialFlow(Flow):
             activation = (1 / (self.radial_alpha[i] + radius.norm(p=2, dim=1))).unsqueeze(1)
             z = z + self.radial_beta[i] * activation * radius
             if train:
-                diagonal = (1 + self.radial_beta[i] * activation)**(self.z_dim - 1)
-                det_grad = (diagonal * (1 + self.radial_beta[i] * activation + self.radial_beta[i] * (-activation**2) * radius.norm(2)))
+                diagonal = (1 + self.radial_beta[i] * activation) ** (self.z_dim - 1)
+                det_grad = (diagonal * (1 + self.radial_beta[i] * activation + self.radial_beta[i] * (
+                    -activation ** 2) * radius.norm(2)))
                 loss += torch.log(det_grad.abs().squeeze(1) + 1e-7)  # for numerical stability
         z.flowed = True
         if train:
-            loss = loss.mean(0) # batch averaging
+            loss = loss.mean(0)  # batch averaging
             return z, loss
         else:
             return z
@@ -149,12 +148,13 @@ class AlternatingFlow(Flow):
                 activation = (1 / (self.radial_alpha[i] + radius.norm(p=2, dim=1))).unsqueeze(1)
                 z = z + self.radial_beta[i] * activation * radius
                 if train:
-                    diagonal = (1 + self.radial_beta[i] * activation)**(self.z_dim - 1)
-                    det_grad = (diagonal * (1 + self.radial_beta[i] * activation + self.radial_beta[i] * (-activation**2) * radius.norm(2)))
+                    diagonal = (1 + self.radial_beta[i] * activation) ** (self.z_dim - 1)
+                    det_grad = (diagonal * (1 + self.radial_beta[i] * activation + self.radial_beta[i] * (
+                        -activation ** 2) * radius.norm(2)))
                     loss += torch.log(det_grad.abs().squeeze(1) + 1e-7)  # for numerical stability
         z.flowed = True
         if train:
-            loss = loss.mean(0) # batch averaging
+            loss = loss.mean(0)  # batch averaging
             return z, loss
         else:
             return z

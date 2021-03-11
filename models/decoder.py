@@ -2,7 +2,6 @@ import numpy as np
 import math
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from collections import OrderedDict
 from models.mutils import UNK_IDX, soft_embed
 
@@ -205,7 +204,8 @@ class DeconvDecoder(nn.Module):
             nnLayers["btn_%d" % (len(nnLayers))] = nn.BatchNorm2d(num_filters * 2)
         nnLayers["relu_%d" % (len(nnLayers))] = nn.ReLU()
 
-        # From: (mb, num_filters * 2, sentence_size_per_layer[0], 1),  To: (mb, num_filters, sentence_size_per_layer[1], 1)
+        # From: (mb, num_filters * 2, sentence_size_per_layer[0], 1),  To: (mb, num_filters, sentence_size_per_layer[
+        # 1], 1)
         nnLayers["deconv_%d" % (len(nnLayers))] = nn.ConvTranspose2d(num_filters * 2, num_filters, (kernel_size, 1),
                                                                      stride=2, output_padding=(1, 0))
         if use_batch_norm:
@@ -213,7 +213,8 @@ class DeconvDecoder(nn.Module):
         nnLayers["relu_%d" % (len(nnLayers))] = nn.ReLU()
 
         for i in range(num_conv_layers):
-            # From: (mb, num_filters, sentence_size_per_layer[1], 1),  To: (mb, num_filters, sentence_size_per_layer[1], 1)
+            # From: (mb, num_filters, sentence_size_per_layer[1], 1),  To: (mb, num_filters, sentence_size_per_layer[
+            # 1], 1)
             nnLayers["conv_%d" % (len(nnLayers))] = nn.Conv2d(num_filters, num_filters, (3, 1), stride=1,
                                                               padding=(1, 0), bias=False)
             if use_batch_norm:
@@ -221,21 +222,24 @@ class DeconvDecoder(nn.Module):
             nnLayers["relu_%d" % (len(nnLayers))] = nn.ReLU()
 
         if num_deconv_layers > 3:
-            # From: (mb, num_filters, sentence_size_per_layer[1], 1),  To: (mb, num_filters, sentence_size_per_layer[2], 1)
+            # From: (mb, num_filters, sentence_size_per_layer[1], 1),  To: (mb, num_filters, sentence_size_per_layer[
+            # 2], 1)
             nnLayers["deconv_%d" % (len(nnLayers))] = nn.ConvTranspose2d(num_filters, num_filters, (kernel_size, 1),
                                                                          stride=2, output_padding=(1, 0))
             if use_batch_norm:
                 nnLayers["btn_%d" % (len(nnLayers))] = nn.BatchNorm2d(num_filters)
             nnLayers["relu_%d" % (len(nnLayers))] = nn.ReLU()
 
-        # From: (mb, num_filters, sentence_size_per_layer[-2], 1),  To: (mb, 1, sentence_size_per_layer[-1], embedding_size)
+        # From: (mb, num_filters, sentence_size_per_layer[-2], 1),  To: (mb, 1, sentence_size_per_layer[-1],
+        # embedding_size)
         nnLayers["deconv_%d" % (len(nnLayers))] = nn.ConvTranspose2d(num_filters, 1, (kernel_size, embedding_size),
                                                                      stride=2, output_padding=(1, 0))
         nnLayers["btn_%d" % (len(nnLayers))] = nn.BatchNorm2d(1)
 
         if add_final_conv_layer:
             nnLayers["relu_%d" % (len(nnLayers))] = nn.ReLU()
-            # From: (mb, (mb, 1, sentence_size_per_layer[-1], embedding_size),  To: (mb, embedding_size, sentence_size_per_layer[-1], 1)
+            # From: (mb, (mb, 1, sentence_size_per_layer[-1], embedding_size),  To: (mb, embedding_size,
+            # sentence_size_per_layer[-1], 1)
             nnLayers["conv_%d" % (len(nnLayers))] = nn.Conv2d(1, embedding_size, (7, embedding_size), stride=1,
                                                               padding=(3, 0))
             nnLayers["btn_%d" % (len(nnLayers))] = nn.BatchNorm2d(embedding_size)

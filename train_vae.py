@@ -7,6 +7,7 @@ import torch.optim as optim
 from models.mutils import save_model
 import utils
 import losses
+from tb_json_logger import log_value
 
 
 def train_vae(cfgv, model, dataset):
@@ -16,8 +17,7 @@ def train_vae(cfgv, model, dataset):
     for it in tqdm(range(cfgv.s_iter, cfgv.s_iter + cfgv.n_iter + 1), disable=None):
         if it % cfgv.cheaplog_every == 0 or it % cfgv.expsvlog_every == 0:
             def tblog(k, v):
-                #log_value('train_' + k, v, it)
-                pass
+                log_value('train_' + k, v, it)
         else:
             tblog = lambda k, v: None
 

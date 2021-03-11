@@ -3,7 +3,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from itertools import chain
-import warnings
 
 from models.decoder import build_decoder
 from models.classifier import build_classifier
@@ -173,7 +172,8 @@ class RNN_VAE(nn.Module):
 
         if self.use_flow:
             raise ValueError(
-                'Hmm if we properly want to do this, we need to compute flow and return flow-kl loss out of function. Maybe if z is a Flow object?')
+                'Hmm if we properly want to do this, '
+                'we need to compute flow and return flow-kl loss out of function. Maybe if z is a Flow object?')
             z, loss = self.flow_model(z, train=True)
 
         if isinstance(q_c, torch.Tensor):
@@ -215,6 +215,7 @@ class RNN_VAE(nn.Module):
 
         if eval_mode:
             self.eval()
+
         sentences = self.sample_G(mbsize, z, c, **sample_kwargs)
         if eval_mode:
             self.train()
@@ -240,8 +241,10 @@ class RNN_VAE(nn.Module):
         sample_mode_soft = sample_mode in ['gumbel_soft', 'gumbel_ST', 'greedy_softmax', 'categorical_softmax',
                                            'none_softmax']
         assert not (
-                sample_mode_soft and prevent_empty), 'cant prevent_empty when soft sampling, we dont wanna modify softmax in place before feeding back into next timestep'
-        assert beam_size >= n_best, 'Can\'t return more than max hypothesis'
+                sample_mode_soft and prevent_empty), 'cant prevent_empty when soft sampling, ' \
+                                                     'we dont wanna modify softmax in place before feeding back into ' \
+                                                     'next timestep '
+        assert beam_size >= n_best, "Can't return more than max hypothesis"
         assert mbsize == z.size(0) == c.size(0), 'oops sizes dont match {} {} {}'.format(mbsize, z.size(0), c.size(0))
         assert (not self.use_flow) or z.flowed, 'BUG: flow>0 but z.flowed=False'
 
@@ -290,17 +293,18 @@ class RNN_VAE(nn.Module):
                 seqSoftIx.append(onehot_embed(sampleIx, self.n_vocab).detach())
 
         for i in range(self.MAX_SEQ_LEN):
-            ### 1) FORWARD PASS THIS TIMESTEP
+            # 1) FORWARD PASS THIS TIMESTEP
             logits, h = self.decoder.forward_sample(sampleSoftIx, sampleIx, z, c, h)
             # END TODO use forward_decoder()
             if prevent_empty and i == 0:
-                # kinda hacky: force first char to be real character by  masking out the logits corresponding to pad/start/eos.
+                # kinda hacky: force first char to be real character by  masking out the logits corresponding to
+                # pad/start/eos.
                 large_neg = -2 * torch.abs(
                     logits.min())  # dont wanna throw off downstream softmaxes by just putting -inf
                 for maskix in [PAD_IDX, START_IDX, EOS_IDX]:
                     logits[:, maskix] = large_neg
 
-            ### 2) GIVEN LOGITS, SAMPLE -> sampleIx, sampleLogProbs, sampleSoftIx
+            # 2) GIVEN LOGITS, SAMPLE -> sampleIx, sampleLogProbs, sampleSoftIx
             if sample_mode == 'categorical':
                 sampleIx = torch.distributions.Categorical(logits=logits / temp).sample()
             elif sample_mode == 'greedy':
@@ -312,10 +316,12 @@ class RNN_VAE(nn.Module):
                 # Update the beams
                 for j, b in enumerate(beam):
                     if not b.done():
+                        # b.advance(logits[:, j])
                         logprobs = F.log_softmax(logits[:, j], dim=1)
                         b.advance(logprobs)
                     # Update corresponding hidden states
                     # NOTE if not advanced, the hidden will be reset and sampleIx will remain.
+
                     self._update_hidden(h, j, b.get_current_origin(), beam_size)
                 # Get the current predictions
                 sampleIx = torch.stack([b.get_current_state() for b in beam]) \
@@ -324,7 +330,8 @@ class RNN_VAE(nn.Module):
             elif sample_mode == 'gumbel_soft':
                 tmp = """keep the softmax as seqSoftIx, not straight through."""
             elif sample_mode == 'gumbel_ST':
-                tmp = """sampleSoftIx are straight-through onehot(argmax(gumbel_softmax)) which will pass through biased gradients"""
+                tmp = """sampleSoftIx are straight-through onehot(argmax(gumbel_softmax)) which will pass through 
+                biased gradients """
             # below: sampleIx none/greedy/categorical. softmax for softIx. Return seqIx, seqSoftIx.
             # The hard sample mode matters for when we'll run into EOS and mask out all subsequent softmaxes.
             elif sample_mode == 'none_softmax':
@@ -338,19 +345,20 @@ class RNN_VAE(nn.Module):
             else:
                 raise Exception('Sample mode {} not implemented.'.format(sample_mode))
 
-            ### 3) FINISHED SENTENCES: MASK OUT sampleIx, sampleLogProbs, sampleSoftIx
+            # 3) FINISHED SENTENCES: MASK OUT sampleIx, sampleLogProbs, sampleSoftIx
             # Not in beam-search: implemented inside of Beam.py
             if not sample_mode == "beam":
-                sampleIx.masked_fill_(finished, PAD_IDX) #(mask, value)
-                finished[sampleIx == EOS_IDX] = True # new EOS reached, mask out in the future.
+                sampleIx.masked_fill_(finished, PAD_IDX)  # (mask, value)
+                finished[sampleIx == EOS_IDX] = True  # new EOS reached, mask out in the future.
                 seqIx.append(sampleIx)
 
                 if sample_mode_soft:
                     sampleSoftIx = sampleSoftIx.masked_fill(finished.unsqueeze(1).clone(), 0)
-                    # set "one-hots" to 0, will embed to 0 vector. Note not exactly the same as sampleIx=0 which will map to embedweight[0,:]
+                    # set "one-hots" to 0, will embed to 0 vector. Note not exactly the same as sampleIx=0 which will
+                    # map to embedweight[0,:]
                     seqSoftIx.append(sampleSoftIx)
 
-            ### 4) UPDATE MASK FOR NEXT ITERATION; BREAK (if all done)
+            # 4) UPDATE MASK FOR NEXT ITERATION; BREAK (if all done)
             if finished.sum() == mbsize and len(seqIx) >= min_length:
                 break  # everyone is done
             if sample_mode == "beam":
@@ -391,5 +399,6 @@ class RNN_VAE(nn.Module):
                              br // beam_size,
                              sizes[2])[:, :, beamIx]
         # Update the states
+
         sent_states.data.copy_(
             sent_states.data.index_select(1, origins))
