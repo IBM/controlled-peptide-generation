@@ -8,7 +8,7 @@ from modlamp.descriptors import *
 
 
 def not_in_range(seq):
-    if len(seq) < 10 or len(seq) > 80:
+    if len(seq) < 1 or len(seq) > 80:
         return True
     return False
 
