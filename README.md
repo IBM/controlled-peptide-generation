@@ -24,6 +24,9 @@ features derived from atomistic simulations.
   * > python main.py --phase 1
   * > python static_eval.py --config_json output/dir/config_overrides.json
 
+### Phase 2: CLaSS (Controlled Latent attribute Space Sampling)
++ > python sample_pipeline.py --config_json output/default/config_overrides.json --samples_outfn_prefix samples --Q_select_amppos 0
+
 ### Data: 
 + `data_processing/data` dir has the short versions of data files required by our data curation code `data_processing/create_datasets.py`
 + For the full version of dataset use following links to download full version of data files that are publicly available. 
