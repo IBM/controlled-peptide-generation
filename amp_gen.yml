@@ -16,6 +16,7 @@ dependencies:
   - matplotlib
   - seaborn
   - scikit-learn
+  - biopython
   - pip:
       - PyHamcrest
       - Automat=0.3.0
