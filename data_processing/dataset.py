@@ -190,7 +190,7 @@ class MultiCsvReader:
             df.loc[:, 'sample_weights'] = 1.0
             for colspecifier, factor in sample_prob_factors.items():
                 mask = self.get_mask(df, colspecifier)
-                assert mask.sum() > 0, 'empty mask for colspecifier {}'.format(colspecifier)
+                # assert mask.sum() > 0, 'empty mask for colspecifier {}'.format(colspecifier)
                 mask = mask & (df['sample_weights'] < factor)  # max(factor, existing)
                 df.loc[mask, 'sample_weights'] = factor
             df.loc[:, 'sample_weights'] /= df.sample_weights.sum()
