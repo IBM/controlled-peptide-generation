@@ -321,24 +321,21 @@ def _set_dataset(dataset):
 
 
 # set path to your data
-DATA_ROOT = './PATH_TO_DATA/'
+DATA_ROOT = './data_processing/'
 
 amp_sample_prob_factors = {
-    'amp=amp_posc': 20, 'amp=amp_posnc': 10,
-    'amp=amp_negc': 20, 'amp=amp_negnc': 10,
-    'tox=tox_posc': 20, 'tox=tox_posnc': 10,
-    'tox=tox_negc': 20, 'tox=tox_negnc': 10,
-    'sol': 20,
-    'anticancer': 20, 'antihyper': 20, 'hormone': 20
+    'amp=amp_pos': 20,
+    'amp=amp_negnc': 20,
+    'tox=tox_pos': 20,
+    'tox=tox_negnc': 20,
 }
 
 amp = Bunch(
     data_kwargs=Bunch(
         lower=False,
-        data_path=DATA_ROOT + 'amp/' if not 'DATA_PATH_AMP' in os.environ else os.environ['DATA_PATH_AMP'],
+        data_path=DATA_ROOT if not 'DATA_PATH_AMP' in os.environ else os.environ['DATA_PATH_AMP'],
         data_format='csv',
-        csv_files=['unlab.csv', 'amp_lab.csv', 'tox_lab.csv', 'sol_lab.csv', \
-                   'anticancer.csv', 'antihypertensive.csv', 'cell-cell.csv'],
+        csv_files=['unlab_.csv', 'amp_lab_.csv', 'tox_lab_.csv'],
         iteratorspecs=Bunch(
             train_vae=Bunch(subset=['split=train'], weighted_random_sample=True,
                             sample_prob_factors=amp_sample_prob_factors),
@@ -347,10 +344,10 @@ amp = Bunch(
             hld_vae=Bunch(subset=['split=val'], weighted_random_sample=True,
                           sample_prob_factors=amp_sample_prob_factors),
             hld_unl=Bunch(subset=['split=val', '^amp'], ),
-            hld_amppos=Bunch(subset=['split=val', 'amp=amp_posc,amp_posnc'], ),
+            hld_amppos=Bunch(subset=['split=val', 'amp=amp_pos,amp_posnc'], ),
             hld_ampneg=Bunch(subset=['split=val', 'amp=amp_negc,amp_negnc'], )
         ),
-        fixed_vocab_path=DATA_ROOT + 'amp/vocab.dict',
+        fixed_vocab_path=None,
         split_seed=1288,  # Purely for computing the train/val/test split.
     ),
     data_prefixes=Bunch(
@@ -360,12 +357,8 @@ amp = Bunch(
         dataset_lab='amp_labeled',
     ),
     attributes=[
-        ('amp', {'amp_negnc': 0, 'amp_negc': 0, 'amp_posc': 1, 'amp_posnc': 1, 'na': -1}),
-        ('tox', {'tox_negc': 0, 'tox_negnc': 0, 'tox_posc': 1, 'tox_posnc': 1, 'na': -1}),
-        ('sol', {'sol_neg': 0, 'sol_pos': 1, 'na': -1}),
-        ('anticancer', {'anticancer': 1, 'na': -1}),
-        ('antihyper', {'antihyper': 1, 'na': -1}),
-        ('hormone', {'cell': 1, 'na': -1})
+        ('amp', {'amp_negnc': 0, 'amp_negc': 0, 'amp_pos': 1, 'na': -1}),
+        ('tox', {'tox_negc': 0, 'tox_negnc': 0, 'tox_pos': 1, 'tox_posnc': 1, 'na': -1}),
     ],
 )
 
