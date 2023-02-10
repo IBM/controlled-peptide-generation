@@ -246,10 +246,14 @@ def all_activity_more_than_str(x_str, num):
 
 
 def all_activity_more_than(df, num):
+    if len(df) == 0:
+        return df
     return df[df['converted_activity'].apply(lambda x: all_activity_more_than_str(x, num))]
 
 
 def all_toxic_more_than(df, num):
+    if len(df) == 0:
+        return df
     return df[df['converted_toxic'].apply(lambda x: all_activity_more_than_str(x, num))]
 
 
@@ -264,6 +268,8 @@ def all_activity_less_than_str(x_str, num):
 
 
 def all_toxic_less_than(df, num):
+    if len(df) == 0:
+        return df
     return df[df['converted_toxic'].apply(lambda x: all_activity_less_than_str(x, num))]
 
 
@@ -284,10 +290,14 @@ def has_activity_less_than_str(x_str, num):
 
 
 def has_activity_less_than(df, num):
+    if len(df) == 0:
+        return df
     return df[df['converted_activity'].apply(lambda x: has_activity_less_than_str(x, num))]
 
 
 def get_seq_len_less_than(df, seq_length):
+    if len(df) == 0:
+        return df
     df_short = df[df['seq'].apply(lambda x: len(x) <= seq_length)]
     return df_short
 
@@ -575,30 +585,31 @@ toxseq = toxseq.sample(frac=1)
 toxseq.columns = ['text', 'tox', 'source']
 toxseq.to_csv("tox_lab_.csv", index=False, header=True)
 
-# Solubility dataset creation
-print('***** Creating solubility dataset ***** ')
-col_Names = ["seq", "source", "source2"]
-sol_train = pd.read_csv("./data/solubility/sol_lab_train.csv", names=col_Names)
-sol_val = pd.read_csv("./data/solubility/sol_lab_valid.csv", names=col_Names)
-sol_test = pd.read_csv("./data/solubility/sol_lab_test.csv", names=col_Names)
+# Solubility dataset creation (solubility dataset not included)
+# print('***** Creating solubility dataset ***** ')
+# col_Names = ["seq", "source", "source2"]
+# sol_train = pd.read_csv("./data/solubility/sol_lab_train.csv", names=col_Names)
+# sol_val = pd.read_csv("./data/solubility/sol_lab_valid.csv", names=col_Names)
+# sol_test = pd.read_csv("./data/solubility/sol_lab_test.csv", names=col_Names)
 
-solseq = pd.concat([sol_train, sol_val, sol_test])
-solseq_short = solseq[solseq['seq'].apply(lambda x: len(x) <= 50)]
-solseq = solseq_short
-solseq.seq = solseq.seq.apply(lambda x: " ".join(x))  # remove the space from the seq
-solseq = solseq.sample(frac=1)
-solseq.columns = ['text', 'sol', 'source']
-print('1. Writing solubility labeled data to sol_lab.csv')
-solseq.to_csv("sol_lab_.csv", index=False, header=True)
+# solseq = pd.concat([sol_train, sol_val, sol_test])
+# solseq_short = solseq[solseq['seq'].apply(lambda x: len(x) <= 50)]
+# solseq = solseq_short
+# solseq.seq = solseq.seq.apply(lambda x: " ".join(x))  # remove the space from the seq
+# solseq = solseq.sample(frac=1)
+# solseq.columns = ['text', 'sol', 'source']
+# print('1. Writing solubility labeled data to sol_lab.csv')
+# solseq.to_csv("sol_lab_.csv", index=False, header=True)
 
 uniprot_unk.columns = ['text', 'source', 'source2']
 ampseq.columns = ['text', 'source', 'source2']
 toxseq.columns = ['text', 'source', 'source2']
-solseq.columns = ['text', 'source', 'source2']
+# solseq.columns = ['text', 'source', 'source2']
 ampseq.text = ampseq.text.apply(lambda x: "".join(x.split()))  # remove the space from the seq
 toxseq.text = toxseq.text.apply(lambda x: "".join(x.split()))
-solseq.text = solseq.text.apply(lambda x: "".join(x.split()))
-allseq = pd.concat([uniprot_unk, ampseq, toxseq, solseq]).drop_duplicates('text')
+# solseq.text = solseq.text.apply(lambda x: "".join(x.split()))
+# allseq = pd.concat([uniprot_unk, ampseq, toxseq, solseq]).drop_duplicates('text')
+allseq = pd.concat([uniprot_unk, ampseq, toxseq]).drop_duplicates('text')
 #print (len(allseq))
 allseq = allseq[allseq['text'].str.contains('^[A-Z]+')]
 allseq = allseq[~allseq.text.str.contains("B")]
